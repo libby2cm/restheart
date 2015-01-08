@@ -70,10 +70,10 @@ public class PutDocumentHandler extends PipedHttpHandler {
         }
 
         // cannot PUT an array
-        if (content instanceof BasicDBList) {
-            ResponseHelper.endExchangeWithMessage(exchange, HttpStatus.SC_NOT_ACCEPTABLE, " data cannot be an array");
-            return;
-        }
+        //if (content instanceof BasicDBList) {
+        //    ResponseHelper.endExchangeWithMessage(exchange, HttpStatus.SC_NOT_ACCEPTABLE, " data cannot be an array");
+        //    return;
+        //}
 
         String id = context.getDocumentId();
 
